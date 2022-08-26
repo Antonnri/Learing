@@ -1,0 +1,14 @@
+const personOne = {
+  name: "Bob",
+  age: 21,
+};
+
+function increasePersonAge(person) {
+  const updatesPerson = Object.assign({}, person);
+  updatesPerson.age += 1;
+  return updatesPerson;
+}
+const updatesPerson = increasePersonAge(personOne);
+
+console.log(personOne.age);
+console.log(updatesPerson.age);
