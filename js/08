@@ -1,0 +1,11 @@
+const hello = "Hello";
+const world = "World!";
+const name = "Anton.";
+const my = "My";
+const is = "is";
+const i = "I`am";
+const live = "live";
+const that = "in";
+const moscow = "Moscow.";
+const greeting = `${hello} ${world} ${i} ${name} ${i} ${live} ${that} ${moscow}`;
+console.log(greeting);
