@@ -3,3 +3,10 @@ console.log(myArray);
 
 const myArray2 = new Array(1, 2, 3);
 console.log(myArray2);
+
+
+const myArray = [1, true, "a"];
+console.log(myArray); //[1, true, 'a']
+console.log(myArray[0]); //1
+console.log(myArray[1]); //true
+console.log(myArray.length); //3
