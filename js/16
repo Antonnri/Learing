@@ -1,0 +1,59 @@
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+const myArray = ["First", "Second", "Third"];
+myArray.forEach((element, index) => {
+  console.log(element, index);
+});
+
+let a = 0;
+
+while (a < 5) {
+  console.log(a);
+  a++;
+}
+
+let b = 10;
+do {
+  console.log(b);
+  b++;
+} while (b < 5);
+
+const myObject = {
+  x: 10,
+  y: true,
+  z: "abc",
+};
+for (const key in myObject) {
+  console.log(key, myObject[key]);
+}
+
+const myObject2 = {
+  x: 20,
+  y: true,
+  z: "bcd",
+};
+Object.keys(myObject2).forEach((key) => {
+  console.log(key, myObject2[key]);
+});
+
+const myObject3 = {
+  x: 40,
+  y: true,
+  z: "ppo",
+};
+Object.values(myObject3).forEach((value) => {
+  console.log(value);
+});
+
+const myArray2 = [true, 10, "abc", null];
+for (const key in myArray2) {
+  console.log(myArray2[key]);
+}
+
+const myString = "Hey";
+for (const letter of myString) {
+  console.log(letter);
+}
+
+
