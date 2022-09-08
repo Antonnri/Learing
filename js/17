@@ -1,0 +1,15 @@
+const sum = (a, b) => a + b;
+
+export default sum;
+
+const one = 1;
+const two = 2;
+
+export { one, two };
+
+
+import sumNumbers from "./ModuleOne.mjs";
+import { one, two } from "./ModuleOne.mjs";
+const res = sumNumbers(10, 2);
+console.log(res);
+console.log(one);
