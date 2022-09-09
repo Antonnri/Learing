@@ -9,8 +9,21 @@ class Comment {
 }
 
 const firstComment = new Comment("First comment");
+const secondComment = new Comment("Second commend");
+const thirdComment = new Comment("Third commend");
+
+Comment.mergeComments("First comment.", "Second comment");
 
 firstComment instanceof Comment;
 firstComment.upvote();
 console.log(firstComment.votesQtu);
 console.log(firstComment);
+
+class NumbersArray extends Array {
+  sum() {
+    return this.reduce((el, acc) => (acc += el), 0);
+  }
+}
+const myArray = new NumbersArray(2, 3, 5);
+console.log(myArray);
+console.log(myArray.sum());
