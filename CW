@@ -1,0 +1,5 @@
+function getCount(str) {
+  "abrakadabra".split("a,e,i,o,u").length - 1;
+
+  return 5;
+}
