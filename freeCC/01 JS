@@ -1,0 +1,11 @@
+// comments string
+/* commens 
+more
+string*/
+
+const myName = "Anton";
+const myStr = "My name is" + myName + "and I am well!";
+
+const someAdjective = "incredibly exciting";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
