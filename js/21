@@ -1,0 +1,25 @@
+const asyncFn = async () => {
+  return "Success!";
+};
+
+asyncFn().then((value) => console.log(value));
+
+const asyncFn2 = async () => {
+  return new Error("There was an error");
+};
+
+asyncFn2()
+  .then((value) => console.log(value))
+  .catch((error) => console.log(error.massage));
+
+const timerPromise = () =>
+  new Promise((resolve, reject) => setTimeout(() => resolve(), 5000));
+
+const asyncFn3 = async () => {
+  console.log("Timer starts");
+  const startTime = performance.now();
+  await timerPromise();
+  const endTime = performance.now();
+  console.log("Timer ended", endTime - startTime);
+};
+asyncFn3();
