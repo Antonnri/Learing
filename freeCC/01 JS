@@ -50,3 +50,14 @@ const lastName = "Lovelace";
 
 // Only change code below this line
 const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+
+
+const myNoun = "dog"; //сушествительное
+const myAdjective = "big";//прилагательное
+const myVerb = "ran";//глагол
+const myAdverb = "quickly";// наречие
+
+// Only change code below this line
+const wordBlanks = "Seeing a " + myAdjective + " " + myNoun + 
+" ,he " + myAdverb + " " + myVerb + "."; // Change this line
+// Only change code above this line
