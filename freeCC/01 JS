@@ -108,3 +108,12 @@ myArray.shift();
 
 // Only change code below this line
 myArray.unshift(["Paul", 35]);
+
+
+const myList = [
+      ["Fish", 3],
+      ["Orange", 5],
+      ["Meat", 2],
+      ["Milk", 3],
+      ["Bread", 20]
+];
