@@ -16,6 +16,7 @@
       <main>
         <section>
           <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
           <article class="item">
             <p class="flavor">French Vanilla</p><p class="price">3.00</p>
           </article>
@@ -48,11 +49,12 @@
           </article>
         </section>
       </main>
+      <hr class="bottom-line">
       <footer>
         <p>
           <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
         </p>
-        <p>123 Free Code Camp Drive</p>
+        <p class="address">123 Free Code Camp Drive</p>
       </footer>
     </div>
   </body>
@@ -71,6 +73,8 @@ body {
 
 h1 {
   font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -92,6 +96,12 @@ h1, h2, p {
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
@@ -122,13 +132,17 @@ h1, h2 {
 
 .price {
   text-align: right;
-  width: 25%
+  width: 25%;
 }
 
 /* FOOTER */
 
 footer {
   font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
 }
 
 a {
