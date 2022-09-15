@@ -1,0 +1,9 @@
+function DNAStrand(dna){
+
+  return dna.replace ( /[T\A\C\G]/g, function (a) {
+    if(a=="A"){return "T"};
+    if(a=="T"){return "A"};
+    if(a=="C"){return "G"};
+    if(a=="G"){return "C"};
+  });
+}
