@@ -1,0 +1,16 @@
+
+function isPrime(num) {
+  //TODO
+    //if(num < 0)
+   //     num = -num;
+    if(num < 0) return false;
+    if(num === 0) return false;
+    if(num === 1) return false;
+    if(num === -5) return false;  
+    if(num < 4) return true;
+
+    if(num % 2 == 0 || num % 3 == 0) return false;
+    for(let i = 5, max = Math.sqrt(num); i <= max; i += 2)
+        if(num % i == 0) return false;
+    return true;
+}
