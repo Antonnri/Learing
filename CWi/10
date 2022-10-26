@@ -1,0 +1,24 @@
+function isItANum(str) {
+// your code here;
+
+const telNumber = str.replace(/[^\d]/g, '');
+ 
+  
+ if (telNumber.charAt(0) == 0 && telNumber.length == 11) {
+     return telNumber
+ }
+  return "Not a phone number"
+  
+  
+  /////////////////
+  const isItANum = str =>(str.replace(/\D/g,'').match(/^0\d{10}$/) || ['Not a phone number'])[0];
+  /////////////////
+  function isItANum(str) {
+  str = str.replace(/[^0-9]/g, '');
+  return /^0\d{10}$/.test(str) ? str : "Not a phone number";
+}
+///////////////////
+function isItANum(s) {
+  let r = s.split('').filter(c=>'0123456789'.includes(c)).join('')
+  return r.length==11 && r[0]=='0' && r || "Not a phone number"
+}
